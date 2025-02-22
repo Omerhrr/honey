@@ -1,0 +1,178 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guineapig</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background: url('guinea.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        .hero {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 100px 0;
+        }
+        .about {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 50px 0;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+        .carousel-item img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            opacity: 0.7;
+        }
+        .animated-text {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+        .animated-text.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .social-buttons {
+            margin-top: 20px;
+        }
+        .social-buttons a {
+            margin: 0 10px;
+            color: white;
+            font-size: 24px;
+        }
+        .buy-link {
+            margin-top: 20px;
+            display: inline-block;
+            font-size: 24px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .buy-link:hover {
+            text-decoration: underline;
+        }
+        .info-box {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .info-box h3 {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="guinea.ico" alt="Guineapig Icon" width="30" height="30" class="d-inline-block align-top">
+                Guineapig
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://x.com" target="_blank">X</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://telegram.org" target="_blank">Telegram</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="carousel slide hero" data-bs-ride="carousel" id="carouselExampleIndicators">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://storage.googleapis.com/a1aa/image/q2QuTPsc2353AhAMuVsSkpZ8h0CMroPg2f3Cbf7In9f981znA.jpg" class="d-block w-100" alt="Guinea Pig Adventure 1: Guinea exploring the Ethereum market">
+            </div>
+            <div class="carousel-item">
+                <img src="https://storage.googleapis.com/a1aa/image/bmfmmPQgEO0hRyKP6AvWYxHpAZxmKYkAy3xuh8LgbXHuh98JA.jpg" class="d-block w-100" alt="Guinea Pig Adventure 1: Guinea exploring the Ethereum market">
+            </div>
+            <div class="carousel-item">
+                <img src="https://storage.googleapis.com/a1aa/image/eGUUZdl3BGSqPCxDbLVFQgJfQTbZc6ISzINuQi2VrRMeG2znA.jpg" class="d-block w-100" alt="Guinea Pig Adventure 2: Guinea making friends in the Binance Smart Chain fields">
+            </div>
+            <div class="carousel-item">
+                <img src="https://storage.googleapis.com/a1aa/image/77MqGLOwATL4AtslRJfKXP3YFBeQurKZBSs4bzKrPhYfG2znA.jpg" class="d-block w-100" alt="Guinea Pig Adventure 3: Guinea overcoming challenges in the blockchain landscape">
+            </div>
+            <div class="carousel-item">
+                <img src="guinea.jpg" class="d-block w-100" alt="Guinea Pig Adventure 4: Guinea discovering new opportunities in the crypto world">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="text-center social-buttons">
+        <a href="https://telegram.org" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+        <a href="https://x.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://example.com/buy" target="_blank" class="buy-link">Buy</a>
+    </div>
+
+    <div id="about" class="about text-center">
+        <div class="container">
+            <div class="info-box animated-text">
+                <h3>About Guineapig</h3>
+                <p>Guineapig is a fun and exciting memecoin inspired by the heroic guinea pig. Our mission is to bring joy and laughter to the crypto community while providing a unique and engaging investment opportunity.</p>
+            </div>
+            <div class="info-box animated-text">
+                <h3>Our Mission</h3>
+                <p>Join us on our journey as we take the crypto world by storm with our adorable mascot and innovative tokenomics. Whether you're a seasoned investor or new to the world of cryptocurrencies, Guineapig is here to make your experience enjoyable and rewarding.</p>
+            </div>
+            <div class="info-box animated-text">
+                <h3>Backstory</h3>
+                <p>In a world where cryptocurrencies are often seen as complex and intimidating, a brave guinea pig named "Guinea" decided to embark on an adventure to change the narrative. Armed with nothing but a cape and an indomitable spirit, Guinea set out to create a token that would bring smiles and excitement to the crypto community.</p>
+                <p>Guinea traveled through the vast landscapes of the blockchain, overcoming challenges and making new friends along the way. From the bustling markets of Ethereum to the serene fields of Binance Smart Chain, Guinea's journey was filled with thrilling escapades and heartwarming moments.</p>
+                <p>With each step, Guinea's legend grew, and soon, the Guineapig was born. This token is not just a currency; it's a symbol of adventure, courage, and the joy of discovery. By holding Guineapig, you're not just investing in a memecoin; you're joining Guinea on an epic quest to bring fun and positivity to the world of crypto.</p>
+            </div>
+            <div class="info-box animated-text">
+                <h3>Contract Address</h3>
+                <p>0x1234567890abcdef1234567890abcdef12345678</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <p>&copy; 2024 Guineapig. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const animatedElements = document.querySelectorAll('.animated-text');
+            animatedElements.forEach((element, index) => {
+                setTimeout(() => {
+                    element.classList.add('visible');
+                }, index * 200);
+            });
+        });
+    </script>
+</body>
+</html>
