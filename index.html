@@ -1,3 +1,4 @@
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -75,6 +76,41 @@
         .footer p {
             margin: 0;
         }
+        /* New styles for wallet and claim */
+        .wallet-claim-section {
+            margin: 20px 0;
+        }
+        .wallet-status, .earned-rewards {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+        .btn-custom {
+            background-color: #fbbf24;
+            color: #1a202c;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .btn-custom:hover {
+            background-color: #d4a017;
+        }
+        .btn-custom:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        .message {
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+        .message.success {
+            color: #28a745;
+        }
+        .message.error {
+            color: #dc3545;
+        }
     </style>
 </head>
 <body>
@@ -92,9 +128,8 @@
                     <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                        <a class="nav-link" href="https://x.com/beecoin00" target="_blank">X</a>
-                    </li>
-               
+                    <a class="nav-link" href="https://x.com/beecoin00" target="_blank">X</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://t.me/+45U-6kXJOPIyMmM1" target="_blank">Telegram</a>
                 </li>
@@ -123,34 +158,32 @@
                 <img src="https://storage.googleapis.com/a1aa/image/mIU2jV6rSPTE8QiXxkx3xpFURvvNO-PrEnFwP0KtCR8.jpg" alt="AI Honeybee Guardian: Neo's Journey - Prologue: Earth in Crisis">
             </div>
             <div class="carousel-item">
-                <img src="https://storage.googleapis.com/a1aa/image/ZA6Imgc68DTq_Zlyj_UylOV7r2KHsAHc-dmIsTejwmU.jpg" alt="AI Honeybee Guardian: Neo's Journey - Chapter 1: Taking crisis as an opportunity">
+                <img src="https://storage.googleapis.com/a1aa/image/ZA6Imgc68DTq_Zlyj_UylOV7r2KHsAHc-dmIsTejwmU.jpg" alt="Chapter 1: Taking crisis as an opportunity">
             </div>
             <div class="carousel-item">
-                <img src="https://storage.googleapis.com/a1aa/image/briFe-lnykrgPFbgEUpNJqYvjxa2mD6fn69y4EmCqRs.jpg" alt="AI Honeybee Guardian: Neo's Journey - Chapter 2: Blockchain and Ecosystem Connection">
+                <img src="https://storage.googleapis.com/a1aa/image/briFe-lnykrgPFbgEUpNJqYvjxa2mD6fn69y4EmCqRs.jpg" alt="Chapter 2: Blockchain and Ecosystem Connection">
             </div>
             <div class="carousel-item">
-                <img src="https://storage.googleapis.com/a1aa/image/jQ-5lgwIW_yPh3sY1hjp0ydEXrDmy_JD5DkGhDb1rjA.jpg" alt="AI Honeybee Guardian: Neo's Journey - Chapter 3: War on Wasps">
+                <img src="https://storage.googleapis.com/a1aa/image/jQ-5lgwIW_yPh3sY1hjp0ydEXrDmy_JD5DkGhDb1rjA.jpg" alt="Chapter 3: War on Wasps">
             </div>
             <div class="carousel-item">
-                <img src="https://storage.googleapis.com/a1aa/image/MtgNb2gjJxdRZwwuAYs4dHtHq4dgLbSwHcPP0JMs3C0.jpg" alt="AI Honeybee Guardian: Neo's Journey - Chapter 4: Revival of Ecosystems">
+                <img src="https://storage.googleapis.com/a1aa/image/MtgNb2gjJxdRZwwuAYs4dHtHq4dgLbSwHcPP0JMs3C0.jpg" alt="Chapter 4: Revival of Ecosystems">
             </div>
             <div class="carousel-item">
-                <img src="https://storage.googleapis.com/a1aa/image/LkZtYJR4jb3-PFLgccOQBxPZho_mXFNZC_M7n72WmHk.jpg" alt="AI Honeybee Guardian: Neo's Journey - Prologue: Earth in Crisis">
+                <img src="https://storage.googleapis.com/a1aa/image/LkZtYJR4jb3-PFLgccOQBxPZho_mXFNZC_M7n72WmHk.jpg" alt="Prologue: Earth in Crisis">
             </div>
             <div class="carousel-item">
-                <img src="https://storage.googleapis.com/a1aa/image/huJFdrOPgTDhLAB61SYCDLslwhnT6TeeyKVGWKnzdg8.jpg" alt="AI Honeybee Guardian: Neo's Journey - Chapter 1: Taking crisis as an opportunity">
+                <img src="https://storage.googleapis.com/a1aa/image/huJFdrOPgTDhLAB61SYCDLslwhnT6TeeyKVGWKnzdg8.jpg" alt="Chapter 1: Taking crisis as an opportunity">
             </div>
             <div class="carousel-item">
-                <img src="https://storage.googleapis.com/a1aa/image/GrvQCwzbWeTWrknuv1Kub_86ovC_yjLYmBGVTfGWAaM.jpg" alt="AI Honeybee Guardian: Neo's Journey - Chapter 2: Blockchain and Ecosystem Connection">
+                <img src="https://storage.googleapis.com/a1aa/image/GrvQCwzbWeTWrknuv1Kub_86ovC_yjLYmBGVTfGWAaM.jpg" alt="Chapter 2: Blockchain and Ecosystem Connection">
             </div>
             <div class="carousel-item">
-                <img src="https://storage.googleapis.com/a1aa/image/LKXfpt5WLVttDeXxANAXfM4T-sNVbHHUZN7SQ9n0sRw.jpg" alt="AI Honeybee Guardian: Neo's Journey - Chapter 3: War on Wasps">
+                <img src="https://storage.googleapis.com/a1aa/image/LKXfpt5WLVttDeXxANAXfM4T-sNVbHHUZN7SQ9n0sRw.jpg" alt="Chapter 3: War on Wasps">
             </div>
             <div class="carousel-item">
-                <img src="https://storage.googleapis.com/a1aa/image/_Gt_AMaRKgVCCrL2EJAxJMw_JLXwzegv525ohXe6kV8.jpg" alt="AI Honeybee Guardian: Neo's Journey - Chapter 4: Revival of Ecosystems">
+                <img src="https://storage.googleapis.com/a1aa/image/_Gt_AMaRKgVCCrL2EJAxJMw_JLXwzegv525ohXe6kV8.jpg" alt="Chapter 4: Revival of Ecosystems">
             </div>
-
-
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -165,21 +198,31 @@
     <div class="text-center py-8">
         <div class="container">
             <a href="https://t.me/+45U-6kXJOPIyMmM1" target="_blank" class="text-2xl mx-4"><i class="fab fa-telegram-plane"></i></a>
-    
-             <a  href="https://x.com/beecoin00" target="_blank">X</a>
-                   
+            <a href="https://x.com/beecoin00" target="_blank">X</a>
             <a href="https://pancakeswap.finance/swap?inputCurrency=0x0c139fbb1e79807f0367d0245e23e5f52d057d5f&outputCurrency=0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c&chainId=56" target="_blank" class="text-2xl mx-4 text-yellow-500 hover:underline">Buy</a>
-            <a  href="whitepaper.pdf" download>Whitepaper</a>
+            <a href="whitepaper.pdf" download>Whitepaper</a>
         </div>
     </div>
 
-   <div class="about text-center py-16 bg-gray-800" id="about">
+    <!-- Wallet Connection and Claim Section -->
+    <div class="text-center py-8 wallet-claim-section">
+        <div class="container">
+            <div class="wallet-status" id="walletStatus">Wallet: Not Connected</div>
+            <div class="earned-rewards" id="earnedRewards">Earned Rewards: 0 Honey</div>
+            <button class="btn-custom" id="connectWallet">Connect Wallet</button>
+            <button class="btn-custom" id="claimRewards" disabled>Claim Rewards</button>
+            <div class="message" id="message"></div>
+        </div>
+    </div>
+
+    <div class="about text-center py-16 bg-gray-800" id="about">
         <div class="container">
             <div class="info-box animated-text mb-8 p-8 bg-gray-700 rounded-lg">
                 <h3 class="text-3xl font-bold mb-4">Prologue: Earth in Crisis</h3>
                 <p>In the second half of the 21st century, a sharp decline in honeybee populations led to a major crisis in Earth’s ecosystem. As bees disappeared, food production plummeted, and flowers wilted, unable to be pollinated. Humanity realized the severity of the problem, but finding a solution proved difficult.</p>
                 <p>That was when Neo emerged—a young innovator determined to restore balance between the ecosystem and the economy using AI technology.</p>
             </div>
+            <!-- Other info-box sections remain unchanged -->
             <div class="info-box animated-text mb-8 p-8 bg-gray-700 rounded-lg">
                 <h3 class="text-3xl font-bold mb-4">Chapter 1: Turning Crisis into Opportunity</h3>
                 <p>Neo had long been interested in honeybee conservation and ecosystem restoration. He planned a blockchain-based cryptocurrency project called Bee Token.</p>
@@ -223,8 +266,265 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.7.4/dist/web3.min.js"></script>
+    <script>
+      
+        const CONTRACT_ADDRESS = "0x33Cf58dB7eC6f7567D0Ab2c654bcFC1261833D38"; 
+
+        
+        const CONTRACT_ABI = [
+            {
+                "inputs": [
+                    {"internalType": "address", "name": "_honeybeeToken", "type": "address"},
+                    {"internalType": "address", "name": "_honeyToken", "type": "address"},
+                    {"internalType": "uint256", "name": "_rewardRate", "type": "uint256"},
+                    {"internalType": "uint256", "name": "_periodStart", "type": "uint256"},
+                    {"internalType": "uint256", "name": "_periodEnd", "type": "uint256"}
+                ],
+                "stateMutability": "nonpayable",
+                "type": "constructor"
+            },
+            {
+                "anonymous": false,
+                "inputs": [
+                    {"indexed": true, "internalType": "address", "name": "user", "type": "address"},
+                    {"indexed": false, "internalType": "uint256", "name": "amount", "type": "uint256"}
+                ],
+                "name": "RewardsClaimed",
+                "type": "event"
+            },
+            {
+                "inputs": [],
+                "name": "BASIS_POINTS",
+                "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "name": "DAILY_CAP_PERCENTAGE",
+                "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "name": "SECONDS_PER_DAY",
+                "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "name": "TOTAL_REWARDS",
+                "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "name": "claimReward",
+                "outputs": [],
+                "stateMutability": "nonpayable",
+                "type": "function"
+            },
+            {
+                "inputs": [{"internalType": "address", "name": "account", "type": "address"}],
+                "name": "earned",
+                "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [{"internalType": "address", "name": "account", "type": "address"}],
+                "name": "getDailyRewardCap",
+                "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "name": "honeyToken",
+                "outputs": [{"internalType": "contract IERC20", "name": "", "type": "address"}],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "name": "honeybeeToken",
+                "outputs": [{"internalType": "contract IERC20", "name": "", "type": "address"}],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [{"internalType": "address", "name": "", "type": "address"}],
+                "name": "lastClaimTimestamp",
+                "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "name": "lastTimeRewardApplicable",
+                "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "name": "lastUpdateTime",
+                "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "name": "periodEnd",
+                "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "name": "periodStart",
+                "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "name": "rewardPerToken",
+                "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "name": "rewardPerTokenStored",
+                "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "name": "rewardRate",
+                "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [{"internalType": "address", "name": "", "type": "address"}],
+                "name": "rewards",
+                "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "name": "rewardsFinalized",
+                "outputs": [{"internalType": "bool", "name": "", "type": "bool"}],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [{"internalType": "address", "name": "account", "type": "address"}],
+                "name": "updateReward",
+                "outputs": [],
+                "stateMutability": "nonpayable",
+                "type": "function"
+            },
+            {
+                "inputs": [{"internalType": "address", "name": "", "type": "address"}],
+                "name": "userRewardPerTokenPaid",
+                "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}],
+                "stateMutability": "view",
+                "type": "function"
+            }
+        ];
+
+        // BSC Mainnet configuration
+        const BSC_RPC_URL = "https://bsc-dataseed.binance.org/";
+        const BSC_CHAIN_ID = "0x38"; // 56 in hex
+
+        let web3;
+        let contract;
+        let userAddress;
+
+        const connectWalletBtn = document.getElementById("connectWallet");
+        const claimRewardsBtn = document.getElementById("claimRewards");
+        const walletStatus = document.getElementById("walletStatus");
+        const earnedRewards = document.getElementById("earnedRewards");
+        const message = document.getElementById("message");
+
+        // Connect wallet
+        connectWalletBtn.addEventListener("click", async () => {
+            if (typeof window.ethereum !== "undefined") {
+                try {
+                    await window.ethereum.request({ method: "eth_requestAccounts" });
+                    web3 = new Web3(window.ethereum);
+
+                    await window.ethereum.request({
+                        method: "wallet_switchEthereumChain",
+                        params: [{ chainId: BSC_CHAIN_ID }],
+                    });
+
+                    const accounts = await web3.eth.getAccounts();
+                    userAddress = accounts[0];
+                    walletStatus.textContent = `Wallet: ${userAddress.substring(0, 6)}...${userAddress.substring(userAddress.length - 4)}`;
+                    connectWalletBtn.disabled = true;
+                    claimRewardsBtn.disabled = false;
+
+                    contract = new web3.eth.Contract(CONTRACT_ABI, CONTRACT_ADDRESS);
+                    message.textContent = "Wallet connected successfully!";
+                    message.className = "success";
+
+                    // Auto-fetch rewards after connecting
+                    updateRewards();
+                } catch (error) {
+                    message.textContent = `Error: ${error.message}`;
+                    message.className = "error";
+                }
+            } else {
+                message.textContent = "Please install MetaMask!";
+                message.className = "error";
+            }
+        });
+
+        // Update earned rewards
+        async function updateRewards() {
+            if (!contract || !userAddress) return;
+            try {
+                const rewards = await contract.methods.earned(userAddress).call();
+                const rewardsInHoney = web3.utils.fromWei(rewards, "ether");
+                earnedRewards.textContent = `Earned Rewards: ${parseFloat(rewardsInHoney).toFixed(6)} Honey`;
+            } catch (error) {
+                console.error("Error fetching rewards:", error);
+            }
+        }
+
+        // Claim rewards
+        claimRewardsBtn.addEventListener("click", async () => {
+            if (!contract || !userAddress) {
+                message.textContent = "Please connect your wallet first!";
+                message.className = "error";
+                return;
+            }
+            try {
+                message.textContent = "Claiming rewards...";
+                message.className = "";
+                await contract.methods.claimReward().send({ from: userAddress });
+                message.textContent = "Rewards claimed successfully!";
+                message.className = "success";
+                updateRewards();
+            } catch (error) {
+                message.textContent = `Error: ${error.message}`;
+                message.className = "error";
+            }
+        });
+    </script>
 </body>
 </html>
